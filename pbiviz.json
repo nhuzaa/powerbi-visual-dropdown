@@ -1,0 +1,25 @@
+{
+    "visual": {
+      "name": "dropslicer",
+      "displayName": "dropslicer",
+      "guid": "dropslicer304BF11844734CE1AF7B298EA3991686",
+      "visualClassName": "Visual",
+      "version": "1.0.0",
+      "description": "Slicer",
+      "supportUrl": "https://material-ui.com/components/material-icons/",
+      "gitHubUrl": "https://material-ui.com/components/material-icons/"
+    },
+    "apiVersion": "2.6.0",
+    "author": {
+      "name": "nhuzaa",
+      "email": "nhuzaa@gmai.com"
+    },
+    "assets": {
+      "icon": "assets/icon.png"
+    },
+    "externalJS": null,
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+  }

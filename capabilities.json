@@ -1,0 +1,157 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Visual Settings",
+            "properties": {
+                "multiselect": {
+                    "displayName": "Enable Multi Select",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "dropUrl": {
+                    "displayName": "Drop URL",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "imageSize": {
+                    "displayName": "Image Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontName": {
+                    "displayName": "Font Name",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "dropdownOutline": {
+                    "displayName": "Dropdown outline",
+                    "displayNameKey": "dropdownOutline",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "dropdownBackground": {
+                    "displayName": "Dropdown Background",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "checkboxOutline": {
+                    "displayName": "Checkbox outline",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "checkboxBackground": {
+                    "displayName": "Checkbox Background",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "checkboxicon": {
+                    "displayName": "Checkbox Icon color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "iconBackground": {
+                    "displayName": "Icon Background",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+                 
+
+            }
+        },
+        "general": {
+            "displayName": "General",
+            "properties": {
+            
+              "filter": {
+                  "type": {
+                      "filter": true
+                  }
+              },
+              "selfFilter": {
+                  "type": {
+                      "filter": {
+                          "selfFilter": false
+                      }
+                  }
+              },
+              "rangeSelectionStart": {
+                  "type": {
+                      "text": true
+                  }
+              },
+              "rangeSelectionEnd": {
+                  "type": {
+                      "text": true
+                  }
+              }
+          }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [{
+                "category": {"min": 0, "max": 1}
+            }],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 10000
+                        }
+                    }
+
+                }
+            }
+        }
+    ]
+}

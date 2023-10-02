@@ -1,0 +1,136 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+.dropdown {
+  width: 100%;
+  display: block;
+}
+
+#outer-div {
+  display: none;
+  // min-width: 160px;
+  overflow-x: scroll;
+}
+
+#inner-div {
+  display: inherit;
+  padding: 5px;
+  // border-left: 1px solid rgba(0,0,0,0.2);
+  // border-right: 1px solid rgba(0,0,0,0.2);
+  // border-bottom: 1px solid rgba(0,0,0,0.2);
+  // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: auto;
+}
+
+.dropdown-button {
+  display: block;
+  background: #ddd;
+  // box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  line-height: 40px; /* The same as your div height */
+  width: auto; 
+  height: 40px;
+  padding-left: 15px;
+  color: #252423;
+  background-color: #fff;
+  border: 1px solid #c8c6c4;
+  border-radius: 2px;
+}
+
+.dropdown-button:hover {
+  opacity: 50%;
+  background-color: rgb(153, 153, 153);
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+// .dropdown:hover #outer-div {
+//   display: block;
+// }
+
+.droparrow-img {
+  width: 30px;
+  height: 30px;
+  display: inline;
+  float: right;
+  margin-top:5px;
+  // position: absolute;
+  // top: 5px;
+  // left: 8e%;
+}
+
+.show {
+  display: block;
+}
+
+.labelclass {
+  display: block;
+  position: relative;
+  padding: 5px 5px 5px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 15px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.labelclass:hover {
+  background-color: rgb(206, 202, 202);
+  color: #ffffff;
+}
+
+/* Hide the browser's default radio button */
+.labelclass input {
+  position: absolute;
+  opacity: 0;
+  top: 2px;
+  left: 5px;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #838383;
+  z-index: 5;
+  line-height: 12px;
+}
+
+/* tickmark */
+
+/* Create a custom radio button */
+.tickmark {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+  border: 1px solid #838383;
+  z-index: 5;
+  align-content: center;
+  line-height: 15px;
+}
+
+/* On mouse-over, add a grey background color */
+.tickmark:hover input ~ .checkmark {
+  background-color: #ccc;
+}
